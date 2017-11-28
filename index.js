@@ -9,9 +9,9 @@ art.Figlet.fontPath = fontDir;
 function render(font) {
   art.image({
     filepath: './raincatcher-logo.png',
-    width: 30
+    width: 20
   })
-    .font('RainCatcher', font, rendered => {
+    .font('RainCatcher', font, 'bright_cyan', rendered => {
       console.log(`${font}: --------`);
       console.log(rendered)
     });
